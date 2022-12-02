@@ -1,0 +1,7 @@
+.sidebar_container{
+    height: 100vh;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

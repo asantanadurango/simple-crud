@@ -1,0 +1,28 @@
+.product_container{
+    height: 100vh;
+    border: 2px solid purple;
+    overflow-y: auto;
+    position: relative;
+}
+
+.item_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_item{
+    width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.boxAdd {
+    position: sticky;
+    top:0;
+    left: 0;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1;
+}
