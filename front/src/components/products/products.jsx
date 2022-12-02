@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './products.css'
-export default Products = () => {
+const Products = () => {
    const [productList, setProductList] = useState([])
     useEffect(() => {
         fetch('http://localhost:8080/api/products')
@@ -47,4 +47,4 @@ const ItemList = ({ name, price, img, _id }) => {
     )
 }
 
-// export default Products
+export default Products
