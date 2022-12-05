@@ -4,7 +4,7 @@ const productRouter = Router()
 
 productRouter.get('/', productController.get)
 productRouter.post('/', productController.post)
-productRouter.put('/', productController.put)
-productRouter.delete('/', productController.delet)
+productRouter.put('/:_id', productController.put)
+productRouter.delete('/:_id', productController.delet)
 productRouter.use('/api/products/', productRouter);
 export { productRouter };

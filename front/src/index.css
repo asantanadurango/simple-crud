@@ -8,7 +8,6 @@ body {
   width: 100%;
   min-width: 320px;
   min-height: 100vh;
-  border: 2px solid lime;
   overflow: hidden;
 }
 
@@ -25,4 +24,9 @@ a{
 ul{
   list-style: none;
   padding: 0;
+}
+
+
+.ellipsis{
+  text-overflow: ellipsis;
 }

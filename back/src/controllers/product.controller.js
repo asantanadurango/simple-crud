@@ -12,14 +12,17 @@ const post = async (req, res) => {
 };
 
 const put = async (req, res) => {
-    const {_id, name, price, img} = req.body
+    console.log('llegó al put');
+    const { _id } = req.params
+    console.log(req.params);
+    const {name, price, img} = req.body
     const product = await ProductMoldel.findByIdAndUpdate(_id, {name, price, img}, {new:true})
     res.json(product);
 };
 
 const delet = async (req, res) => {
     console.log(req.body);
-    const {_id} = req.body
+    const {_id} = req.params
     const product = await  ProductMoldel.findByIdAndDelete(_id)
     console.log(product);
     res.json(product);

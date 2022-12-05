@@ -1,0 +1,6 @@
+.obj-fit-contain{
+   object-fit: contain;
+}
+.asp-ratio-2-1{
+   aspect-ratio: 2/1;
+}
